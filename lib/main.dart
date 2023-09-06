@@ -13,7 +13,10 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: Column(children: [
-
+          CircleAvatar(
+            radius: 50,
+            backgroundImage: AssetImage('images/img1.jpg'),
+          )
         ]),
       ),
     );

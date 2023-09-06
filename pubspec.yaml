@@ -61,7 +61,13 @@ flutter:
  
   assets:
     - images/
-
+  fonts:
+    - family: AmaticSC-Bold
+      fonts:
+        - asset: fonts/AmaticSC-Bold.ttf
+    - family: PermanentMarker-Regular
+      fonts:
+        - asset: fonts/PermanentMarker-Regular.ttf
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 

@@ -9,35 +9,67 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return  MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(children: [
-            CircleAvatar(
-              radius: 50,
+            const CircleAvatar(
+              radius: 60,
               backgroundImage: AssetImage('images/img1.jpg'),
             ),
-            Text(
+            const Text(
               "Faseem",
               style: TextStyle(
-                  fontFamily: 'PermanentMarker-Regular',
-                  fontSize: 20,
+                  fontFamily: 'RubikIso-Regular.ttf',
+                  fontSize: 23,
                   color: Colors.white,
-                  fontWeight: FontWeight.bold
+                  fontWeight: FontWeight.bold,
+                  letterSpacing: 2.5
                   ),
                   
             ),
-            Text(
+            const Text(
               "Student",
               style: TextStyle(
-                fontSize: 20,
+                fontSize: 25,
                 fontFamily: 'AmaticSC-Bold',
                 color: Colors.white,
                 fontWeight: FontWeight.bold,
-              ),
-            )
-          ]),
+              ), 
+            ),
+         // ignore: avoid_unnecessary_containers
+         Container(
+            color: Colors.white,
+            
+            child:const Row(children: [
+              Icon(Icons.phone_android,
+                    size: 35,
+                  ),
+                Text("+91 9846672172",style: TextStyle(
+                  fontSize: 20,
+                  
+                   fontFamily: 'PermanentMarker-Regular'
+                ),)
+               ],),
+          ),
+         const SizedBox(height: 20,),
+          Container(
+            color: Colors.white,
+            child: const Row(
+              children: [
+                Icon(Icons.email,
+                size:35,),
+              Text("mohdfaseem7@gmail.com",
+              style: TextStyle(
+                fontSize: 20,
+                fontFamily: 'PermanentMarker-Regular.ttf'
+              ),)
+              ],
+            
+            ),
+          )
+          ],),
         ),
       ),
     );

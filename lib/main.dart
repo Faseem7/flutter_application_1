@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
             const Text(
               "Faseem",
               style: TextStyle(
-                  fontFamily: 'RubikIso-Regular.ttf',
+                  fontFamily: 'KaushanScript-Regular',
                   fontSize: 23,
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
@@ -62,8 +62,9 @@ class MyApp extends StatelessWidget {
                 size:35,),
               Text("mohdfaseem7@gmail.com",
               style: TextStyle(
-                fontSize: 20,
-                fontFamily: 'PermanentMarker-Regular.ttf'
+                fontSize: 25,
+                fontWeight: FontWeight.bold,
+                fontFamily: 'Caveat-VariableFont_wght'
               ),)
               ],
             
